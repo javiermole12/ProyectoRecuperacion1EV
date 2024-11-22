@@ -6,7 +6,7 @@ public class Main {
         Empresa empresa = new Empresa("Compra-Venta Coches");
 
         // Cargar los datos iniciales
-
+        Empresa.cargarDatosIniciales(empresa);
 
         while (true) {
             System.out.println("\nMenú:");
