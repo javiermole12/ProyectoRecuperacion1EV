@@ -102,6 +102,16 @@ public class Empresa {
         }
     }
 
+    // Mostrar coches por concesionario
+    public void mostrarCochesPorConcesionario(String ciudad) {
+        if (grupo.containsKey(ciudad)) {
+            System.out.println("Concesionario en " + ciudad + ":");
+            System.out.println(grupo.get(ciudad));
+        } else {
+            System.out.println("ERROR: El concesionario indicado no existe.");
+        }
+    }
+
     public static void cargarDatosIniciales(Empresa empresa) {
         // Crear concesionarios
         empresa.crearSede("Madrid", 7);
