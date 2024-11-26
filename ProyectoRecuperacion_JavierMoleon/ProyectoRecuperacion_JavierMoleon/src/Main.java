@@ -16,7 +16,8 @@ public class Main {
             System.out.println("4. Buscar coches por marca");
             System.out.println("5. Buscar coches por modelo");
             System.out.println("6. Mostrar listado de coches por concesionario");
-            System.out.println("7. Salir");
+            System.out.println("7. Mostrar facturación total de la empresa.");
+            System.out.println("8. Salir");
             System.out.print("Seleccione una opción: ");
             int opcion = sc.nextInt();
             sc.nextLine();  // Consumir el salto de línea
@@ -78,6 +79,10 @@ public class Main {
                     break;
 
                 case 7:
+                    empresa.facturacionTotal();
+                    break;
+
+                case 8:
                     System.out.println("Saliendo...");
                     sc.close();
                     return;
